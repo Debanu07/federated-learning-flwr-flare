@@ -1,0 +1,14 @@
+2026-04-14 15:17:31,006 - SimulatorRunner - ERROR - Simulator setup error: Error: [('/mnt/c/Users/Debanu/Desktop/FL_proj/./flare_workspace/local', '/mnt/c/Users/Debanu/Desktop/FL_proj/./flare_workspace/server/local', '[Errno 1] Operation not permitted')]
+2026-04-14 15:17:31,011 - root - ERROR - Traceback (most recent call last):
+  File "/home/debanu/.local/lib/python3.10/site-packages/nvflare/private/fed/app/simulator/simulator_runner.py", line 294, in setup
+    self._deploy_apps(job_name, data_bytes, meta, log_config_file_path)
+  File "/home/debanu/.local/lib/python3.10/site-packages/nvflare/private/fed/app/simulator/simulator_runner.py", line 393, in _deploy_apps
+    self._setup_local_startup(log_config_file_path, os.path.join(self.simulator_root, p))
+  File "/home/debanu/.local/lib/python3.10/site-packages/nvflare/private/fed/app/simulator/simulator_runner.py", line 339, in _setup_local_startup
+    shutil.copytree(workspace_local, local_dir, dirs_exist_ok=True)
+  File "/usr/lib/python3.10/shutil.py", line 559, in copytree
+    return _copytree(entries=entries, src=src, dst=dst, symlinks=symlinks,
+  File "/usr/lib/python3.10/shutil.py", line 513, in _copytree
+    raise Error(errors)
+shutil.Error: [('/mnt/c/Users/Debanu/Desktop/FL_proj/./flare_workspace/local', '/mnt/c/Users/Debanu/Desktop/FL_proj/./flare_workspace/server/local', '[Errno 1] Operation not permitted')]
+
