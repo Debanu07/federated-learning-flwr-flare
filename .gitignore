@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+data/
+flare_workspace/
+flare_diff_workspace/
+*.log
+*.txt
